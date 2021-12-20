@@ -16,9 +16,14 @@ struct CardView: View {
     }
 
     var body: some View {
-        Text("\(card)")
-            .padding()
-            .font(.largeTitle)
+        ZStack {
+            Color.purple
+                .ignoresSafeArea()
+
+            Text("\(card)")
+                .padding()
+                .font(.system(.largeTitle, design: .rounded))
+        }
     }
 }
 

@@ -17,6 +17,7 @@ struct CardsListView: View {
                 ForEach(viewModel.cards, id: \.self)  { card in
                     NavigationLink(destination: CardView(card: card)) {
                         Text("\(card)")
+                            .font(.system(.body, design: .rounded))
                             .padding()
                     }
                 }
