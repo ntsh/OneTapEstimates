@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardsListView: View {
 
-    @ObservedObject var viewModel: CardsViewModel = CardsViewModel()
+    @ObservedObject var viewModel: CardsViewModel
 
     var body: some View {
         ScrollView {
@@ -22,12 +22,12 @@ struct CardsListView: View {
                     }
                 }
             }
-        }.navigationTitle("T-shirt sizes")
+        }.navigationTitle(viewModel.title)
     }
 }
 
 struct CardsListView_Previews: PreviewProvider {
     static var previews: some View {
-        CardsListView()
+        CardsListView(viewModel: CardsViewModel(estimate: Estimate(type: .fibonacci, values: ["1","2","3"])))
     }
 }

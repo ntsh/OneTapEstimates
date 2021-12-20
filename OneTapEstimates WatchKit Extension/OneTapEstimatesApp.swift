@@ -12,7 +12,7 @@ struct OneTapEstimatesApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                CardsListView(viewModel: CardsViewModel())
+                EstimatesSelectionView()
             }
         }
     }

@@ -9,14 +9,21 @@ import Foundation
 
 class CardsViewModel: ObservableObject {
 
-    var cards: [String]
+    private var estimate: Estimate
 
-    init(cards: [String] =  ["XS", "S", "M", "L", "XL", "XXL"]) {
-        self.cards = cards
+    var title: String {
+        estimate.title
+    }
+
+    var cards: [String] {
+        estimate.values
     }
 
     var count: Int {
         cards.count
     }
 
+    init(estimate: Estimate) {
+        self.estimate = estimate
+    }
 }

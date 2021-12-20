@@ -18,6 +18,10 @@
 		CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30E9277075C5008474A7 /* CardsListView.swift */; };
 		CD0A30ED2770769A008474A7 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EC2770769A008474A7 /* CardsViewModel.swift */; };
 		CD0A30EF27707799008474A7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EE27707799008474A7 /* CardView.swift */; };
+		CD0A30F22770A120008474A7 /* EstimatesSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */; };
+		CD0A30F42770A14B008474A7 /* EstimatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F32770A14B008474A7 /* EstimatesViewModel.swift */; };
+		CD0A30F72770D50E008474A7 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F62770D50E008474A7 /* Estimate.swift */; };
+		CD0A30F92770D537008474A7 /* EstimateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F82770D537008474A7 /* EstimateType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,10 @@
 		CD0A30E9277075C5008474A7 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
 		CD0A30EC2770769A008474A7 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		CD0A30EE27707799008474A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesSelectionView.swift; sourceTree = "<group>"; };
+		CD0A30F32770A14B008474A7 /* EstimatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesViewModel.swift; sourceTree = "<group>"; };
+		CD0A30F62770D50E008474A7 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
+		CD0A30F82770D537008474A7 /* EstimateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,8 @@
 		CD0A30B32770739A008474A7 /* OneTapEstimates WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CD0A30F52770D4F7008474A7 /* Models */,
+				CD0A30F02770A0F0008474A7 /* EstimatesSelection */,
 				CD0A30EB277075F5008474A7 /* CardsList */,
 				CD0A30B62770739A008474A7 /* OneTapEstimatesApp.swift */,
 				CD0A30B82770739A008474A7 /* ComplicationController.swift */,
@@ -186,6 +196,24 @@
 				CD0A30EE27707799008474A7 /* CardView.swift */,
 			);
 			path = CardsList;
+			sourceTree = "<group>";
+		};
+		CD0A30F02770A0F0008474A7 /* EstimatesSelection */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */,
+				CD0A30F32770A14B008474A7 /* EstimatesViewModel.swift */,
+			);
+			path = EstimatesSelection;
+			sourceTree = "<group>";
+		};
+		CD0A30F52770D4F7008474A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A30F62770D50E008474A7 /* Estimate.swift */,
+				CD0A30F82770D537008474A7 /* EstimateType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,9 +404,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0A30B72770739A008474A7 /* OneTapEstimatesApp.swift in Sources */,
+				CD0A30F92770D537008474A7 /* EstimateType.swift in Sources */,
+				CD0A30F22770A120008474A7 /* EstimatesSelectionView.swift in Sources */,
 				CD0A30ED2770769A008474A7 /* CardsViewModel.swift in Sources */,
 				CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */,
 				CD0A30EF27707799008474A7 /* CardView.swift in Sources */,
+				CD0A30F72770D50E008474A7 /* Estimate.swift in Sources */,
+				CD0A30F42770A14B008474A7 /* EstimatesViewModel.swift in Sources */,
 				CD0A30B92770739A008474A7 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
