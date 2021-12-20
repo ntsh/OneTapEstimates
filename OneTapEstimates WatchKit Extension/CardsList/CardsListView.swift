@@ -13,7 +13,7 @@ struct CardsListView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem(), GridItem()]) {
+            LazyVGrid(columns: Array(repeating: .init(.flexible()), count: 2)) {
                 ForEach(viewModel.cards, id: \.self)  { card in
                     NavigationLink(destination: CardView(card: card)) {
                         Text("\(card)")
@@ -27,7 +27,10 @@ struct CardsListView: View {
 }
 
 struct CardsListView_Previews: PreviewProvider {
+
+    private static var estimate = Estimate(type: .tShirtSize, values: ["XS", "S", "M", "L", "XL", "XXL"])
+
     static var previews: some View {
-        CardsListView(viewModel: CardsViewModel(estimate: Estimate(type: .fibonacci, values: ["1","2","3"])))
+        CardsListView(viewModel: CardsViewModel(estimate: estimate))
     }
 }
