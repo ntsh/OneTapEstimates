@@ -10,12 +10,14 @@
 		CD0A30A527707397008474A7 /* OneTapEstimates WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD0A30A427707397008474A7 /* OneTapEstimates WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD0A30AA2770739A008474A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0A30A92770739A008474A7 /* Assets.xcassets */; };
 		CD0A30B02770739A008474A7 /* OneTapEstimates WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD0A30AF2770739A008474A7 /* OneTapEstimates WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CD0A30B52770739A008474A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30B42770739A008474A7 /* ContentView.swift */; };
 		CD0A30B72770739A008474A7 /* OneTapEstimatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30B62770739A008474A7 /* OneTapEstimatesApp.swift */; };
 		CD0A30B92770739A008474A7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30B82770739A008474A7 /* ComplicationController.swift */; };
 		CD0A30BB2770739B008474A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0A30BA2770739B008474A7 /* Assets.xcassets */; };
 		CD0A30BE2770739B008474A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0A30BD2770739B008474A7 /* Preview Assets.xcassets */; };
 		CD0A30C92770739B008474A7 /* OneTapEstimatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */; };
+		CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30E9277075C5008474A7 /* CardsListView.swift */; };
+		CD0A30ED2770769A008474A7 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EC2770769A008474A7 /* CardsViewModel.swift */; };
+		CD0A30EF27707799008474A7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EE27707799008474A7 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +81,6 @@
 		CD0A30A427707397008474A7 /* OneTapEstimates WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OneTapEstimates WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0A30A92770739A008474A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0A30AF2770739A008474A7 /* OneTapEstimates WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OneTapEstimates WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0A30B42770739A008474A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD0A30B62770739A008474A7 /* OneTapEstimatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapEstimatesApp.swift; sourceTree = "<group>"; };
 		CD0A30B82770739A008474A7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		CD0A30BA2770739B008474A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +89,9 @@
 		CD0A30C42770739B008474A7 /* OneTapEstimatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapEstimatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapEstimatesTests.swift; sourceTree = "<group>"; };
 		CD0A30CE2770739B008474A7 /* OneTapEstimatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapEstimatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0A30E9277075C5008474A7 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
+		CD0A30EC2770769A008474A7 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		CD0A30EE27707799008474A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +152,7 @@
 		CD0A30B32770739A008474A7 /* OneTapEstimates WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CD0A30B42770739A008474A7 /* ContentView.swift */,
+				CD0A30EB277075F5008474A7 /* CardsList */,
 				CD0A30B62770739A008474A7 /* OneTapEstimatesApp.swift */,
 				CD0A30B82770739A008474A7 /* ComplicationController.swift */,
 				CD0A30BA2770739B008474A7 /* Assets.xcassets */,
@@ -172,6 +176,16 @@
 				CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */,
 			);
 			path = OneTapEstimatesTests;
+			sourceTree = "<group>";
+		};
+		CD0A30EB277075F5008474A7 /* CardsList */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A30E9277075C5008474A7 /* CardsListView.swift */,
+				CD0A30EC2770769A008474A7 /* CardsViewModel.swift */,
+				CD0A30EE27707799008474A7 /* CardView.swift */,
+			);
+			path = CardsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +376,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0A30B72770739A008474A7 /* OneTapEstimatesApp.swift in Sources */,
-				CD0A30B52770739A008474A7 /* ContentView.swift in Sources */,
+				CD0A30ED2770769A008474A7 /* CardsViewModel.swift in Sources */,
+				CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */,
+				CD0A30EF27707799008474A7 /* CardView.swift in Sources */,
 				CD0A30B92770739A008474A7 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
