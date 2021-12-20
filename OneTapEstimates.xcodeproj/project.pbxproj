@@ -160,14 +160,12 @@
 		CD0A30B32770739A008474A7 /* OneTapEstimates WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CD0A30F52770D4F7008474A7 /* Models */,
+				CD0A30FB2770D92C008474A7 /* App */,
 				CD0A30F02770A0F0008474A7 /* EstimatesSelection */,
 				CD0A30EB277075F5008474A7 /* CardsList */,
-				CD0A30B62770739A008474A7 /* OneTapEstimatesApp.swift */,
-				CD0A30B82770739A008474A7 /* ComplicationController.swift */,
-				CD0A30BA2770739B008474A7 /* Assets.xcassets */,
+				CD0A30F52770D4F7008474A7 /* Models */,
+				CD0A30FA2770D918008474A7 /* Resources */,
 				CD0A30BF2770739B008474A7 /* Info.plist */,
-				CD0A30BC2770739B008474A7 /* Preview Content */,
 			);
 			path = "OneTapEstimates WatchKit Extension";
 			sourceTree = "<group>";
@@ -214,6 +212,24 @@
 				CD0A30F82770D537008474A7 /* EstimateType.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CD0A30FA2770D918008474A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A30BA2770739B008474A7 /* Assets.xcassets */,
+				CD0A30BC2770739B008474A7 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD0A30FB2770D92C008474A7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CD0A30B62770739A008474A7 /* OneTapEstimatesApp.swift */,
+				CD0A30B82770739A008474A7 /* ComplicationController.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,7 +592,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OneTapEstimates WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OneTapEstimates WatchKit Extension/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OneTapEstimates WatchKit Extension/Info.plist";
@@ -607,7 +623,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OneTapEstimates WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OneTapEstimates WatchKit Extension/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OneTapEstimates WatchKit Extension/Info.plist";
