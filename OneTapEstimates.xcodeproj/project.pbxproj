@@ -98,6 +98,7 @@
 		CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesDataSource.swift; sourceTree = "<group>"; };
 		CD0A30F62770D50E008474A7 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		CD0A30F82770D537008474A7 /* EstimateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateType.swift; sourceTree = "<group>"; };
+		CDE749E82773950100A14739 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 				CD0A30A827707397008474A7 /* OneTapEstimates WatchKit App */,
 				CD0A30B32770739A008474A7 /* OneTapEstimates WatchKit Extension */,
 				CD0A30C72770739B008474A7 /* OneTapEstimatesTests */,
+				CDE749E82773950100A14739 /* README.md */,
 				CD0A30A127707397008474A7 /* Products */,
 			);
 			sourceTree = "<group>";
