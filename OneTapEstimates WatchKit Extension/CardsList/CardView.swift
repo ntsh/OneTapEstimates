@@ -17,7 +17,7 @@ struct CardView: View {
 
     var body: some View {
         ZStack {
-            Color.purple
+            Color.accentColor
                 .ignoresSafeArea()
 
             Text("\(card)")
