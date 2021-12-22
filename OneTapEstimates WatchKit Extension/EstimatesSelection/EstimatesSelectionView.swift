@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct EstimatesSelectionView: View {
-    @StateObject var viewModel: EstimatesViewModel = EstimatesViewModel()
+    @State var dataSource: EstimatesDataSource = EstimatesDataSource()
 
     var body: some View {
-        List(viewModel.estimates) { estimate in
-            NavigationLink(destination: CardsListView(viewModel: CardsViewModel(estimate: estimate))) {
+        List(dataSource.estimates) { estimate in
+            NavigationLink(destination: CardsListView(estimate: estimate)) {
                 VStack(alignment: .leading) {
                     Text(estimate.title)
                         .font(.headline)
@@ -20,7 +20,7 @@ struct EstimatesSelectionView: View {
                         .font(.footnote)
                 }
             }
-        }.navigationTitle(viewModel.title)
+        }.navigationTitle(dataSource.title)
     }
 }
 

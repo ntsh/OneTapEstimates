@@ -18,8 +18,15 @@ struct Estimate: Identifiable {
     var title: String {
         type.rawValue
     }
+}
 
+//MARK: Utility
+extension Estimate {
     var summary: String {
         values.joined(separator: ", ")
+    }
+
+    var cardCount: Int {
+        values.count
     }
 }

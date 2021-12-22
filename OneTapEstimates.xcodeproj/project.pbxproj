@@ -16,10 +16,9 @@
 		CD0A30BE2770739B008474A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0A30BD2770739B008474A7 /* Preview Assets.xcassets */; };
 		CD0A30C92770739B008474A7 /* OneTapEstimatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */; };
 		CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30E9277075C5008474A7 /* CardsListView.swift */; };
-		CD0A30ED2770769A008474A7 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EC2770769A008474A7 /* CardsViewModel.swift */; };
 		CD0A30EF27707799008474A7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EE27707799008474A7 /* CardView.swift */; };
 		CD0A30F22770A120008474A7 /* EstimatesSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */; };
-		CD0A30F42770A14B008474A7 /* EstimatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F32770A14B008474A7 /* EstimatesViewModel.swift */; };
+		CD0A30F42770A14B008474A7 /* EstimatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */; };
 		CD0A30F72770D50E008474A7 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F62770D50E008474A7 /* Estimate.swift */; };
 		CD0A30F92770D537008474A7 /* EstimateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F82770D537008474A7 /* EstimateType.swift */; };
 /* End PBXBuildFile section */
@@ -94,10 +93,9 @@
 		CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapEstimatesTests.swift; sourceTree = "<group>"; };
 		CD0A30CE2770739B008474A7 /* OneTapEstimatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapEstimatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0A30E9277075C5008474A7 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
-		CD0A30EC2770769A008474A7 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		CD0A30EE27707799008474A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesSelectionView.swift; sourceTree = "<group>"; };
-		CD0A30F32770A14B008474A7 /* EstimatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesViewModel.swift; sourceTree = "<group>"; };
+		CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesDataSource.swift; sourceTree = "<group>"; };
 		CD0A30F62770D50E008474A7 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		CD0A30F82770D537008474A7 /* EstimateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				CD0A30E9277075C5008474A7 /* CardsListView.swift */,
-				CD0A30EC2770769A008474A7 /* CardsViewModel.swift */,
 				CD0A30EE27707799008474A7 /* CardView.swift */,
 			);
 			path = CardsList;
@@ -200,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */,
-				CD0A30F32770A14B008474A7 /* EstimatesViewModel.swift */,
+				CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */,
 			);
 			path = EstimatesSelection;
 			sourceTree = "<group>";
@@ -422,11 +419,10 @@
 				CD0A30B72770739A008474A7 /* OneTapEstimatesApp.swift in Sources */,
 				CD0A30F92770D537008474A7 /* EstimateType.swift in Sources */,
 				CD0A30F22770A120008474A7 /* EstimatesSelectionView.swift in Sources */,
-				CD0A30ED2770769A008474A7 /* CardsViewModel.swift in Sources */,
 				CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */,
 				CD0A30EF27707799008474A7 /* CardView.swift in Sources */,
 				CD0A30F72770D50E008474A7 /* Estimate.swift in Sources */,
-				CD0A30F42770A14B008474A7 /* EstimatesViewModel.swift in Sources */,
+				CD0A30F42770A14B008474A7 /* EstimatesDataSource.swift in Sources */,
 				CD0A30B92770739A008474A7 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  EstimatesViewModel.swift
+//  EstimatesDataSource.swift
 //  OneTapEstimates WatchKit Extension
 //
 //  Created by Neetesh Gupta on 20/12/2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class EstimatesViewModel: ObservableObject {
+class EstimatesDataSource {
 
     var estimates: [Estimate] = [
         Estimate(type: .tShirtSize, values: ["XS", "S", "M", "L", "XL", "XXL"]),
