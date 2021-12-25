@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import EstimatesKit
 
 struct EstimatesSelectionView: View {
     @State var dataSource: EstimatesDataSource = EstimatesDataSource()

@@ -17,9 +17,7 @@
 		CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30E9277075C5008474A7 /* CardsListView.swift */; };
 		CD0A30EF27707799008474A7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EE27707799008474A7 /* CardView.swift */; };
 		CD0A30F22770A120008474A7 /* EstimatesSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */; };
-		CD0A30F42770A14B008474A7 /* EstimatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */; };
-		CD0A30F72770D50E008474A7 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F62770D50E008474A7 /* Estimate.swift */; };
-		CD0A30F92770D537008474A7 /* EstimateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F82770D537008474A7 /* EstimateType.swift */; };
+		CDBCE1652777B16100833F90 /* EstimatesKit in Frameworks */ = {isa = PBXBuildFile; productRef = CDBCE1642777B16100833F90 /* EstimatesKit */; };
 		CDE749EA27774FF800A14739 /* EstimateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE749E927774FF800A14739 /* EstimateTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,9 +92,7 @@
 		CD0A30E9277075C5008474A7 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
 		CD0A30EE27707799008474A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesSelectionView.swift; sourceTree = "<group>"; };
-		CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesDataSource.swift; sourceTree = "<group>"; };
-		CD0A30F62770D50E008474A7 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
-		CD0A30F82770D537008474A7 /* EstimateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateType.swift; sourceTree = "<group>"; };
+		CDBCE1632777B13D00833F90 /* EstimatesKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EstimatesKit; sourceTree = "<group>"; };
 		CDE749E82773950100A14739 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CDE749E927774FF800A14739 /* EstimateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBCE1652777B16100833F90 /* EstimatesKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,11 +126,13 @@
 		CD0A309927707397008474A7 = {
 			isa = PBXGroup;
 			children = (
+				CDBCE1632777B13D00833F90 /* EstimatesKit */,
 				CD0A30A827707397008474A7 /* OneTapEstimates WatchKit App */,
 				CD0A30B32770739A008474A7 /* OneTapEstimates WatchKit Extension */,
 				CD0A30C72770739B008474A7 /* OneTapEstimatesTests */,
-				CDE749E82773950100A14739 /* README.md */,
 				CD0A30A127707397008474A7 /* Products */,
+				CD614B8E2777AAA4007FF802 /* Frameworks */,
+				CDE749E82773950100A14739 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,7 +162,6 @@
 				CD0A30FB2770D92C008474A7 /* App */,
 				CD0A30F02770A0F0008474A7 /* EstimatesSelection */,
 				CD0A30EB277075F5008474A7 /* CardsList */,
-				CD0A30F52770D4F7008474A7 /* Models */,
 				CD0A30FA2770D918008474A7 /* Resources */,
 				CD0A30BF2770739B008474A7 /* Info.plist */,
 			);
@@ -199,18 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */,
-				CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */,
 			);
 			path = EstimatesSelection;
-			sourceTree = "<group>";
-		};
-		CD0A30F52770D4F7008474A7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CD0A30F62770D50E008474A7 /* Estimate.swift */,
-				CD0A30F82770D537008474A7 /* EstimateType.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		CD0A30FA2770D918008474A7 /* Resources */ = {
@@ -229,6 +217,13 @@
 				CD0A30B82770739A008474A7 /* ComplicationController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		CD614B8E2777AAA4007FF802 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +276,9 @@
 			dependencies = (
 			);
 			name = "OneTapEstimates WatchKit Extension";
+			packageProductDependencies = (
+				CDBCE1642777B16100833F90 /* EstimatesKit */,
+			);
 			productName = "OneTapEstimates WatchKit Extension";
 			productReference = CD0A30AF2770739A008474A7 /* OneTapEstimates WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -419,12 +417,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0A30B72770739A008474A7 /* OneTapEstimatesApp.swift in Sources */,
-				CD0A30F92770D537008474A7 /* EstimateType.swift in Sources */,
 				CD0A30F22770A120008474A7 /* EstimatesSelectionView.swift in Sources */,
 				CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */,
 				CD0A30EF27707799008474A7 /* CardView.swift in Sources */,
-				CD0A30F72770D50E008474A7 /* Estimate.swift in Sources */,
-				CD0A30F42770A14B008474A7 /* EstimatesDataSource.swift in Sources */,
 				CD0A30B92770739A008474A7 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -872,6 +867,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDBCE1642777B16100833F90 /* EstimatesKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EstimatesKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD0A309A27707397008474A7 /* Project object */;
 }
