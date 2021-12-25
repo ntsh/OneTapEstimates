@@ -14,13 +14,13 @@
 		CD0A30B92770739A008474A7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30B82770739A008474A7 /* ComplicationController.swift */; };
 		CD0A30BB2770739B008474A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0A30BA2770739B008474A7 /* Assets.xcassets */; };
 		CD0A30BE2770739B008474A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0A30BD2770739B008474A7 /* Preview Assets.xcassets */; };
-		CD0A30C92770739B008474A7 /* OneTapEstimatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */; };
 		CD0A30EA277075C5008474A7 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30E9277075C5008474A7 /* CardsListView.swift */; };
 		CD0A30EF27707799008474A7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30EE27707799008474A7 /* CardView.swift */; };
 		CD0A30F22770A120008474A7 /* EstimatesSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */; };
 		CD0A30F42770A14B008474A7 /* EstimatesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F32770A14B008474A7 /* EstimatesDataSource.swift */; };
 		CD0A30F72770D50E008474A7 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F62770D50E008474A7 /* Estimate.swift */; };
 		CD0A30F92770D537008474A7 /* EstimateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A30F82770D537008474A7 /* EstimateType.swift */; };
+		CDE749EA27774FF800A14739 /* EstimateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE749E927774FF800A14739 /* EstimateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +90,6 @@
 		CD0A30BD2770739B008474A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD0A30BF2770739B008474A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD0A30C42770739B008474A7 /* OneTapEstimatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapEstimatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTapEstimatesTests.swift; sourceTree = "<group>"; };
 		CD0A30CE2770739B008474A7 /* OneTapEstimatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapEstimatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0A30E9277075C5008474A7 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
 		CD0A30EE27707799008474A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		CD0A30F62770D50E008474A7 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		CD0A30F82770D537008474A7 /* EstimateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateType.swift; sourceTree = "<group>"; };
 		CDE749E82773950100A14739 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CDE749E927774FF800A14739 /* EstimateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +181,7 @@
 		CD0A30C72770739B008474A7 /* OneTapEstimatesTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD0A30C82770739B008474A7 /* OneTapEstimatesTests.swift */,
+				CDE749E927774FF800A14739 /* EstimateTests.swift */,
 			);
 			path = OneTapEstimatesTests;
 			sourceTree = "<group>";
@@ -433,7 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0A30C92770739B008474A7 /* OneTapEstimatesTests.swift in Sources */,
+				CDE749EA27774FF800A14739 /* EstimateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
