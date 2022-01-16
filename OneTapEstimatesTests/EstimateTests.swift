@@ -10,21 +10,6 @@ import XCTest
 
 class EstimateTests: XCTestCase {
 
-    private var estimate: Estimate!
+/// Moved to EstimatesKit
 
-    override func setUpWithError() throws {
-        estimate = Estimate(type: .tShirtSize, values: ["S", "M", "XS"])
-    }
-
-    func testSummary() throws {
-        XCTAssertEqual(estimate.summary, "S, M, XS")
-    }
-
-    func testCount() throws {
-        XCTAssertEqual(estimate.cardCount, 3)
-    }
-
-    func testTitle() throws {
-        XCTAssertEqual(estimate.title, "T-shirt Sizes")
-    }
 }
