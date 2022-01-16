@@ -43,13 +43,6 @@
 			remoteGlobalIDString = CD0A30AE2770739A008474A7;
 			remoteInfo = "OneTapEstimates WatchKit Extension";
 		};
-		CD0A30CF2770739B008474A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD0A309A27707397008474A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD0A30A327707397008474A7;
-			remoteInfo = "OneTapEstimates WatchKit App";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,7 +81,6 @@
 		CD0A30BD2770739B008474A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD0A30BF2770739B008474A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD0A30C42770739B008474A7 /* OneTapEstimatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapEstimatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0A30CE2770739B008474A7 /* OneTapEstimatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapEstimatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0A30E9277075C5008474A7 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
 		CD0A30EE27707799008474A7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CD0A30F12770A120008474A7 /* EstimatesSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesSelectionView.swift; sourceTree = "<group>"; };
@@ -107,13 +99,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD0A30C12770739B008474A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD0A30CB2770739B008474A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,7 +128,6 @@
 				CD0A30A427707397008474A7 /* OneTapEstimates WatchKit App.app */,
 				CD0A30AF2770739A008474A7 /* OneTapEstimates WatchKit Extension.appex */,
 				CD0A30C42770739B008474A7 /* OneTapEstimatesTests.xctest */,
-				CD0A30CE2770739B008474A7 /* OneTapEstimatesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,24 +285,6 @@
 			productReference = CD0A30C42770739B008474A7 /* OneTapEstimatesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD0A30CD2770739B008474A7 /* OneTapEstimatesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD0A30E62770739B008474A7 /* Build configuration list for PBXNativeTarget "OneTapEstimatesUITests" */;
-			buildPhases = (
-				CD0A30CA2770739B008474A7 /* Sources */,
-				CD0A30CB2770739B008474A7 /* Frameworks */,
-				CD0A30CC2770739B008474A7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD0A30D02770739B008474A7 /* PBXTargetDependency */,
-			);
-			name = OneTapEstimatesUITests;
-			productName = OneTapEstimatesUITests;
-			productReference = CD0A30CE2770739B008474A7 /* OneTapEstimatesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -342,10 +308,6 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = CD0A30AE2770739A008474A7;
 					};
-					CD0A30CD2770739B008474A7 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = CD0A30A327707397008474A7;
-					};
 				};
 			};
 			buildConfigurationList = CD0A309D27707397008474A7 /* Build configuration list for PBXProject "OneTapEstimates" */;
@@ -365,7 +327,6 @@
 				CD0A30A327707397008474A7 /* OneTapEstimates WatchKit App */,
 				CD0A30AE2770739A008474A7 /* OneTapEstimates WatchKit Extension */,
 				CD0A30C32770739B008474A7 /* OneTapEstimatesTests */,
-				CD0A30CD2770739B008474A7 /* OneTapEstimatesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,13 +363,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD0A30CC2770739B008474A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,13 +386,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD0A30CA2770739B008474A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -456,11 +403,6 @@
 			isa = PBXTargetDependency;
 			target = CD0A30AE2770739A008474A7 /* OneTapEstimates WatchKit Extension */;
 			targetProxy = CD0A30C52770739B008474A7 /* PBXContainerItemProxy */;
-		};
-		CD0A30D02770739B008474A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD0A30A327707397008474A7 /* OneTapEstimates WatchKit App */;
-			targetProxy = CD0A30CF2770739B008474A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -763,52 +705,6 @@
 			};
 			name = Release;
 		};
-		CD0A30E72770739B008474A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.ntsh.OneTapEstimatesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "OneTapEstimates WatchKit App";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Debug;
-		};
-		CD0A30E82770739B008474A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.ntsh.OneTapEstimatesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "OneTapEstimates WatchKit App";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -853,15 +749,6 @@
 			buildConfigurations = (
 				CD0A30E42770739B008474A7 /* Debug */,
 				CD0A30E52770739B008474A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD0A30E62770739B008474A7 /* Build configuration list for PBXNativeTarget "OneTapEstimatesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD0A30E72770739B008474A7 /* Debug */,
-				CD0A30E82770739B008474A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
